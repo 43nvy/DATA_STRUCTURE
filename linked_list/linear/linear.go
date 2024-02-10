@@ -57,11 +57,11 @@ func (ll *LinkedList) Append(data int) {
 
 	last := ll.head
 
-	for last.next != nil {
+	for last != nil {
 		last = last.next
 	}
 
-	last.next = newNode
+	last = newNode
 }
 
 func (ll *LinkedList) AddBeforeN(n, data int) {
