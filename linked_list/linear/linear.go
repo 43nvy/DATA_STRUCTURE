@@ -25,11 +25,7 @@ func newNode(data int, next *node) *node {
 }
 
 func (ll *LinkedList) isEmpty() bool {
-	if ll.head == nil {
-		return true
-	}
-
-	return false
+	return ll.head == nil
 }
 
 func (ll *LinkedList) Amount() int {
